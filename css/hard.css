@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dfeff0;
+    margin: 0;
+    font-size: 25px;
+  }
+  
+  .conteiner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: -80px;
+    color: rgb(43, 72, 105);
+    font-family: Bradley Hand, cursive;
+  }
+  
+  h2 {
+    margin-top: -50px;
+    font-size: 30px;
+  }
+  
+  .new-game {
+    width: 170px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: rgb(65, 106, 153);
+    color: rgb(247, 247, 247);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: Bradley Hand, cursive;
+    margin-top: -30px;
+  }
+  
+  .new-game:hover {
+    box-shadow: 0px 0px 40px 0px rgba(66, 67, 150, 0.685);
+  }
+  
+  .game {
+    padding: 40px 15px;
+    margin: 0 auto;
+    max-width: 1000px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: -40px;
+  }
+  
+  .card {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    padding: 40px;
+    background-color: rgb(101, 171, 189);
+    border-radius: 15px;
+    text-align: center;
+    font-size: 40px;
+    transform: rotateY(180deg);
+    transition: 0.7s;
+  }
+  
+  .card.open {
+    transform: rotateY(0deg);
+  }
+  
+  .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgb(101, 171, 189);
+    transform: 0.7s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  .open::after,
+  .success::after {
+    transform: rotateY(180deg);
+  }
+
+  .back {
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: rgb(65, 106, 153);
+    color: rgb(247, 247, 247);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: Bradley Hand, cursive;
+    margin-top: -20px;
+  }
+
+  .back:hover {
+    box-shadow: 0px 0px 40px 0px rgba(66, 67, 150, 0.685);
+  }
+
+  

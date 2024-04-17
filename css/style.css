@@ -1,0 +1,58 @@
+h1{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+h1 {
+    margin-top: 60px;
+}
+
+h2{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    font-size: 50px;
+    margin-top: -50px;
+}
+
+html {
+    /*background-color: #dfeff0;*/
+    background-image: url(https://img.freepik.com/premium-photo/white-crumpled-paper-for-background-image_59045-46.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+  }
+.button-wrapper{
+	display: flex;	
+	justify-content: center;	
+    margin-top: 20px;
+}
+.button {
+    background-color: rgba(93, 150, 216, 0.555); 
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    height: 100px;
+    width: 300px;
+    border-radius: 10rem;
+    font-family: Bradley Hand, cursive;
+} 
+.button:hover {
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+    background-color: rgba(74, 147, 230, 0.444); 
+    text-shadow: 3px 3px #747d998c;
+    cursor: pointer;
+}
